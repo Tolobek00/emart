@@ -1,0 +1,64 @@
+@import "../../Styles/mixin";
+
+.products {
+        h1 {
+            text-align: center;
+            padding: 15px;
+        }
+}
+.loading, .buttons {
+    text-align: center;
+}
+.buttons {
+    @include flexbox(center, center);
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 50px 0
+    // height: 100px;
+}
+.product-container {
+    @include flexbox (center, center);
+    flex-wrap: wrap;
+    gap: 15px;
+    // display: grid;
+    // grid-template-columns: repeat(4, 1fr);
+    .products {
+        @include flexbox (center, center);
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px;
+        width: 300px;
+        height: 400px;
+        border-radius: 5px;
+        // border: 1px solid black;
+        box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.199);
+        text-align: center;
+        .img-div {
+            img {
+                width: 220px;
+                height: 250px;
+                // object-fit: cover;
+            }
+        }
+        .product-text {
+            .btns {
+                @include flexbox (center, center);
+                gap: 15px;
+            }
+            .buy-btn {
+                color: black;
+                text-decoration: none;
+                border: 1px solid black;
+                padding: 5px 10px;
+                // margin-left: 15px;
+                transition: .3s;
+                &:hover {
+                    background: black;
+                    color: white;
+                }
+            }
+            // h1 
+        }
+
+    }
+}
